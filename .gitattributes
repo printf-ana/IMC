@@ -1,2 +1,46 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalho do Alex - IMC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="function.js"></script>
+</head>
+<body>
+	<form name="formDados">
+		<fieldset>
+			<legend>Dados Pessoais:</legend>
+			<label for=iNome> Nome:</label>
+			<input type="text" name="nome" id="iNome"></br></br>
+			<label for=iAnodeNasc>Ano de Nascimento:</label>
+			<input type="number" name="AnodeNasc" maxlength="4" id="iAnodeNasc"></br></br>
+			<label>Sexo:</label></br></br>
+			<input type="radio" name="sexo" id="ifem" value="Feminino">
+			<label for="ifem">Feminino</label></br></br>
+			<input type="radio"  name="sexo" id="imasc" value="Masculino">
+			<label for="imasc">Masculino</label></br></br>	
+		</fieldset>
+	
+		<fieldset>
+				<legend>Aspectos Físicos</legend>
+			<label>Altura:</label>
+			<input type="number" name="altura">
+			<label>metros.</label></br></br>
+			<label id="iPeso">Peso:</label>
+			<input type="number" name="peso" id="iPeso">
+			<label>Kg.</label></br></br>
+		</fieldset>	
+		<fieldset>
+			<legend>Resultado:</legend></br></br>
+			<!--<input type="text" name="resultado" id="ires">-->
+			<p id="iRes"></p>
+			<p id="iesp"></p>
+			</fieldset>
+		<input type="button" value="Calcular" onclick="calcularIMC()">
+			<input type="reset" value="Limpar"></br></br>
+	</form>
+	
+</body>
+</html>
